@@ -1,0 +1,14 @@
+.app {
+  height: 100vh;
+  padding: 2.4rem;
+  overscroll-behavior-y: none;
+  display: flex;
+  position: relative;
+}
+
+/* JavaScript to hide the scrollbar for Firefox */
+@-moz-document url-prefix() {
+  .app {
+    scrollbar-width: none; /* Hide the scrollbar for Firefox */
+  }
+}
